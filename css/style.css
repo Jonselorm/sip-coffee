@@ -34,6 +34,7 @@ html {
     scroll-padding-top: 7rem;
 }
 
+  
 
 section {
     padding: 2rem 9%;
@@ -52,6 +53,32 @@ section {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
+
+/*hamburger*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+   height: 100vh;
+   z-index: 999;
+   width: 200px;
+   background-color: rgba(255,225,225,0.2);
+   backdrop-filter: blur(10px);
+   box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+   display: none;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   gap: 30px;
+   padding: 4rem 9%;
+}
+
+.sidebar a {
+    width:  100%;
+
+}
+
+
 
 .header .logo {
     color: var(--main-color);
@@ -387,25 +414,184 @@ body{
     font-size: 16px;
     
 } 
-/* 
+
 
 @media (min-width: 320px) and (max-width: 480px) {
+  
+/* .header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block; */
+} 
 
-    .navbar{
+    .header .navbar .hide{
         display: none;
 
     }
-    .header .logo {
-        color: var(--main-color);
-        font-size: 1rem;
+
+
+
+/* home */
+.home {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .row {
+    display: flex;
+    flex-direction: column;
+}
+
+.home .row .content {
+    width: 25rem;
+    padding-top: 3rem;
+}
+
+.home .row .content h3 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.home .row .image {
+    width: 70%;
+    padding-top: 3rem;
+    /* margin: 0; */
+    /* max-width: 21rem; */
+}
+
+.home .row .image img {
+    width: 80%;
+    height: 80%;
+}
+
+.home .image-slider {
+    display: flex;
+    /* padding-top: 1rem; */
+}
+
+.home .image-slider img {
+    margin-top: 1rem;
+    height: 7rem;
+}
+
+.heading {
+    font-size: 3rem;
+    line-height: 2.5;
+}
+
+.heading span {
+    font-size: 30px;
+}
+
+.about .heading {
+    margin-top: 1em;
+}
+
+.about .content .icon-container {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.menu .heading {
+    margin-top: 2rem;
+}
+
+.menu .box-container {
+    width: 100%;
+    gap: 1rem;
+    /* margin: 1rem; */
+}
+
+.menu .box-container .box {
+    margin-left: 1rem;
+    flex: 1 1 21rem;
+    padding: 1rem;
+}
+
+.menu .box-container .box img {
+    height: 5rem;
+}
+
+.menu .box-container .box .content {
+    padding-left: 0.1rem;
+}
+
+.review .heading {
+    margin-top: 5rem;
+}
+
+.review .review-slider .box .fa-quote-left {
+    font-size: 4rem;
+    /* margin-top: 0.5rem; */
+}
+
+.review .review-slider .box .fa-quote-right {
+    font-size: 4rem;
+}
+
+.book {
+    margin: 30px;
+}
+
+.footer {
+    padding: 10px;
+    margin-top: 10rem;
+}
+
+
+@media (min-width: 481px) and (max-width: 767px){
+    .header .navbar .hide {
+        display: none;
     }
 
-    
-.home {
-    min-height: 100vh;
-    padding-top: 90px;
-    background-image: url(../image/image/home-bg.jpg);
-    background-size: cover;
-    background-position: center; */
-/* } */
-/*  */
+    .home .row .content {
+        width: 30rem;
+        padding-top: 3rem;
+    }
+
+    .home .row .content h3 {
+        font-size: 4rem;
+        /* line-height: 1; */
+    }
+
+    .home .row .image img {
+        /* width: 90%; */
+        /* height: 90%; */
+        padding-top: 5rem;
+        /* width: 1%; */
+        /* max-width: 3rem; */
+    }
+
+    .heading {
+        font-size: 4rem;
+        line-height: 2.5;
+    }
+
+    .heading span {
+        font-size: 40px;
+    }
+
+    .about .heading {
+        margin-top: 0.5em;
+    }
+
+    .about .content .icon-container {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .menu .heading {
+        margin-top: 1em;
+    }
+
+    .review .heading {
+        margin-top: 1em;
+    }
+
+    .book {
+        margin: 4em;
+    }
+}
+

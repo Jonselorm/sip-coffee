@@ -13,17 +13,35 @@
   <link rel="stylesheet" href="./CSS/style.css">
   <title>Coffee shop</title>
 </head>
+<body>
 <!---header starts here-->
-<body><header class="header">
-  <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
 
-  <a href="#" class="logo">Coffee <i class="fas fa-mug-hot"></i> </a>
+  <header class="header">
+  <div id="menu-btn" 
+  class="fas fa-bars" 
+  class="sidebar"
+  onclick="showsidebar()"></div>
+
+  <a href="#" class="logo">Coffee <i class="fas fa-mug-hot"> </i> </a>
   <nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#menu">Menu</a>
-    <a href="#review">Review</a>
-    <a href="#order">Order</a>
+    <!--hamburger starts-->
+    <ul class="sidebar">
+      <a href="#"
+      ><i class="fa-solid fa-xmark" onclick=hidesidebar()></i>
+    </a>
+    <a href="#home" class=" navoptions">Home</a>
+    <a href="#about" class=" navoptions">About</a>
+    <a href="#menu" class=" navoptions">Menu</a>
+    <a href="#order" class=" navoptions">Order</a>
+
+    </ul>
+     <!--hamburger ends-->
+
+    <a href="#home" class="hide">Home</a>
+    <a href="#about"class="hide">About</a>
+    <a href="#menu" class="hide">Menu</a>
+    <a href="#review"class="hide">Review</a>
+    <a href="#order"class="hide">Order</a>
   </nav>
 
   <a href="#" class="btn">Order a table</a>
@@ -256,7 +274,6 @@
   </section>
   <!-- footer ends here -->
   <script src="https://unpkg.com/swiper@11.0.4/swiper-bundle.min.js"></script>
-   <script src="./js/script.js"></script>
+<script src="./js/scprit.js"></script>
 </body>
-
 </html>
